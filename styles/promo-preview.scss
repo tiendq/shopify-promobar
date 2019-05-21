@@ -1,0 +1,40 @@
+.promo-preview {
+  // Overwrite bar styles are not significant in preview mode (in admin)
+  &.sticky-promo-bar {
+    position: relative;
+    z-index: 0;
+
+    .promo-bar {
+      // No animation in preview mode.
+      transform: scaleY(1);
+
+      .promo-content {
+        // Since there's no dismiss icon
+        padding-right: 0;
+
+        .promo-text {
+          // Keep bar in normal height without any text content
+          min-height: 21px;
+
+          // Use Polaris default size, reset base size to 62.5% in html
+          font-size: inherit;
+
+          &.clickable {
+            a {
+              font-size: inherit;
+            }
+          }
+        }
+
+        .promo-cta {
+          // Use Polaris default size, reset base size to 62.5% in html
+          font-size: inherit;
+        }
+      }
+
+      .dismiss-icon {
+        display: none;
+      }
+    }
+  }
+}

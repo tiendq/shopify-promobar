@@ -1,0 +1,15 @@
+{
+  "env": {
+    "DEBUG": "app,express*",
+    "NODE_ENV": "development",
+    "PORT": 8000
+  },
+  "ignore": [
+    "client",
+    "config",
+    "grunt",
+    "public",
+    "Gruntfile.js",
+    "webpack.*"
+  ]
+}

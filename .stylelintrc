@@ -1,0 +1,11 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss"],
+  "rules": {
+    "comment-empty-line-before": null,
+    "declaration-colon-newline-after": null,
+    "declaration-empty-line-before": null,
+    "selector-list-comma-newline-after": null,
+    "no-missing-end-of-source-newline": null,
+    "no-empty-source": null
+  }
+}

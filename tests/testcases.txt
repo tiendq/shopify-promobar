@@ -1,0 +1,10 @@
+- Install new shop
+- Install for an existing shop (uninstalled)
+- Test validation
+- Update promo and see changes
+
+- Load store:
+- without promo
+- with text promo
+- with clickable text promo
+- with CTA

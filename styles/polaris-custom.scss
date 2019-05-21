@@ -1,0 +1,8 @@
+.Polaris-Card {
+  overflow: visible;
+}
+
+.Polaris-FormLayout__Items {
+  // Fix issue #230, https://github.com/Shopify/polaris/issues/230
+  align-items: flex-start;
+}

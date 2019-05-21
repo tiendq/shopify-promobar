@@ -1,0 +1,11 @@
+{
+  "apps": [{
+    "name": "stickypromobar",
+    "script": "./index.js",
+    "cwd": "/var/www/spb",
+    "env": {
+      "NODE_ENV": "production",
+      "PORT": 8000
+    }
+  }]
+}
