@@ -19,6 +19,7 @@ function requestOAuth(request, response) {
     secure: 'development' !== process.env.NODE_ENV
   });
 
+  // Redirecting user to Shopify asking permissions page.
   // https://help.shopify.com/api/sdks/shopify-apps/embedded-app-sdk/getting-started
   response.render('home/escape-iframe', {
     layout: false,

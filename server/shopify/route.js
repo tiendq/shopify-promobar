@@ -2,8 +2,15 @@ let router = require('express').Router();
 let shopify = require('./shopify');
 
 /*
+The OAuth flow start here.
+https://help.shopify.com/en/api/getting-started/authentication/oauth
+
 Entry route to handle initial requests/redirects from Shopify, including:
-?hmac=c32bb062790bb8361a1297dc8721cff5185d17786b8edc8ab8df28d0018eb414&locale=en&protocol=https%3A%2F%2F&shop=test-store.myshopify.com&timestamp=1509427819
+?hmac=c32bb062790bb8361a1297dc8721cff5185d17786b8edc8ab8df28d0018eb414
+&locale=en
+&protocol=https%3A%2F%2F
+&shop=test-store.myshopify.com
+&timestamp=1509427819
 
 - Install request:
   /shopify/?shop=test-store.myshopify.com
