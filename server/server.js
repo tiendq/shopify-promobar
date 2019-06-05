@@ -1,7 +1,7 @@
+const express = require('express');
 let session = require('express-session');
 let cookieParser = require('cookie-parser');
 let handlebars = require('express-handlebars');
-let serveStatic = require('serve-static');
 let config = require('../config');
 let logger = require('./logger');
 var errorHandler = require('./error-handler');
@@ -36,15 +36,16 @@ function startApplication(app) {
   // Static files will be handled by NGINX in production.
   // Configure access for public static files e.g. client side images, JavaScript, CSS, fonts.
   if ('development' === process.env.NODE_ENV) {
-    let staticOptions = {
+    let options = {
       index: false,
       maxAge: config.staticMaxAge
-    };
+    }
 
     // Put it on top of route chain so no session and cookies for static file requests.
-    app.use('/static', serveStatic('public/static', staticOptions));
-    app.use('/', serveStatic('public', staticOptions));
-    app.use('/tests', serveStatic('tests', staticOptions));
+    // Paths are relative to Node process start folder: /index.js
+    app.use('/static', express.static('public/static', options));
+    app.use('/', express.static('public', options));
+    app.use('/tests', express.static('tests', options));
   }
 
   app.use(cookieParser(config.cookieSecret));
