@@ -2,7 +2,7 @@ module.exports = {
   cookieSecret: 'staging',
   port: process.env.PORT,
   mongodb: {
-    url: 'mongodb://web:staging@localhost:57017/promobar_staging',
+    url: 'mongodb://USERNAME:PASSWORD@SERVER:27017/promobar',
     poolSize: 25
   },
   shopify: {

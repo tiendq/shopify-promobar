@@ -7,6 +7,7 @@ node_modules
 public/static
 
 # Files to ignore
+.env
 /config.js
 *.css.map
 *.js.map

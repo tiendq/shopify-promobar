@@ -2,7 +2,7 @@ module.exports = {
   cookieSecret: 'development',
   port: process.env.PORT,
   mongodb: {
-    url: 'mongodb://localhost:57017/promobar',
+    url: 'mongodb://localhost:27017/promobar',
     poolSize: 1
   },
   shopify: {
