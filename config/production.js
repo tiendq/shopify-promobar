@@ -2,7 +2,7 @@ module.exports = {
   cookieSecret: 'SECRET_GOES_HERE',
   port: process.env.PORT,
   mongodb: {
-    url: 'mongodb://USERNAME:PASSWORD@SERVER:27017/stickypromobar',
+    url: 'mongodb://USERNAME:PASSWORD@SERVER:27017/promobar',
     poolSize: 25
   },
   shopify: {

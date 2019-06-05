@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TARGET=$HOME/Staging/stickypromobar
+TARGET=$HOME/Staging/promobar
 
 cp -R public $TARGET
 cp -R server $TARGET

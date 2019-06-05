@@ -1,6 +1,6 @@
 {
   "apps": [{
-    "name": "stickypromobar",
+    "name": "promobar",
     "script": "./index.js",
     "cwd": "/var/www/spb",
     "env": {

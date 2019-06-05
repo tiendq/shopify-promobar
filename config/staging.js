@@ -2,7 +2,7 @@ module.exports = {
   cookieSecret: 'staging',
   port: process.env.PORT,
   mongodb: {
-    url: 'mongodb://web:staging@localhost:27017/stickypromobar_staging',
+    url: 'mongodb://web:staging@localhost:57017/promobar_staging',
     poolSize: 25
   },
   shopify: {
@@ -13,7 +13,7 @@ module.exports = {
 
   // Browser session cookie in milliseconds.
   sessionMaxAge: 25 * 60 * 1000,
-  logFile: '/var/log/stickypromobar/winston_staging.log',
+  logFile: '/var/log/promobar/winston_staging.log',
 
   // Provide a max-age in milliseconds for static files caching.
   // This can also be a string accepted by the ms module.
