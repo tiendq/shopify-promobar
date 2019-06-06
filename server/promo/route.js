@@ -1,6 +1,7 @@
-let router = require('express').Router();
-let jsonParser = require('body-parser').json();
-let promo = require('./promo');
+const express = require('express');
+const promo = require('./promo');
+
+let router = express.Router();
 
 router.all('*', (request, response, next) => {
   if (request.session.shop)
@@ -13,7 +14,7 @@ router.get('/edit', (request, response) => {
   promo.editPromo(request, response);
 });
 
-router.post('/edit', jsonParser, (request, response) => {
+router.post('/edit', express.json(), (request, response) => {
   promo.savePromo(request, response);
 });
 
