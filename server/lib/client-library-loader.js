@@ -35,7 +35,7 @@ function generateLoaderScript(shopId) {
 }
 
 function getLoaderScript(shopId, revision, appUrl) {
-  let scopeName = 'HurabayPromoBar';
+  let scopeName = 'ShopifyPromoBar';
 
   let script = `
     var ${scopeName}=${scopeName} || {};
@@ -56,4 +56,4 @@ function getLoaderScript(shopId, revision, appUrl) {
 
 module.exports = {
   sendLoaderScript
-};
+}

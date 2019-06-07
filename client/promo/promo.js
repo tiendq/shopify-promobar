@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { loadPromoData } from './promo-client';
-import HurabayPromoBar from './hurabay-promo-bar';
+import ShopifyPromoBar from './shopify-promo-bar';
 
 (function () {
-  let config = window.HurabayPromoBar;
+  let config = window.ShopifyPromoBar;
 
   if (config && config.appUrl && config.shopId) {
     loadPromoData(config.appUrl, config.shopId)
@@ -31,6 +31,6 @@ function setupPromoBar(promo) {
   document.body.appendChild(container);
 
   setTimeout(() => {
-    ReactDOM.render(<HurabayPromoBar promo={promo} />, document.getElementById(id));
+    ReactDOM.render(<ShopifyPromoBar promo={promo} />, document.getElementById(id));
   }, 1000 * promo.delay);
 }

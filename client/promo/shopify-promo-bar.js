@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class HurabayPromoBar extends React.Component {
+class ShopifyPromoBar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -85,9 +85,9 @@ class HurabayPromoBar extends React.Component {
   }
 }
 
-HurabayPromoBar.propTypes = {
+ShopifyPromoBar.propTypes = {
   promo: PropTypes.object.isRequired,
   previewMode: PropTypes.bool
 };
 
-export default HurabayPromoBar;
+export default ShopifyPromoBar;
