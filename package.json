@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "Tien Do <tiendq@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tiendq/shopify-promobar.git"
+  },
   "scripts": {
     "build": "grunt dist; NODE_ENV=production webpack; NODE_ENV=production webpack --config webpack.promo.js;",
     "dev": "grunt dev; webpack; webpack --config webpack.promo.js;",
